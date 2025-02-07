@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,12 +14,12 @@
         }
         .container {
             max-width: 600px;
-            margin: auto;
+            margin: 80px;
             background: white;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            position: relative;
+            position: absolute;
             animation: fadeIn 2s ease-in-out;
         }
         h1 {
@@ -68,6 +68,7 @@
             font-weight: bold;
             animation: floatingText 3s infinite ease-in-out;
             z-index: -1;
+            
         }
     </style>
     <script>
@@ -93,7 +94,7 @@
     <div class="floating-text">I Love You Mahii ❤️ Happy Rose Day! 🌹</div>
     <div class="container">
         <h1>Happy Rose Day, Mahii! 🌹</h1>
-        <img src="https://www.pngall.com/wp-content/uploads/5/Red-Rose-PNG-Image.png" alt="Rose" class="rose-img">
+        <img src="https://unsplash.com/photos/red-rose-with-droplets-gcWd0ts4RCo" alt="Rose" class="rose-img">
         <p>My love, every petal of this rose carries my love for you. I’m sorry for last night, and I hope this day brings a fresh start to our love. You are my forever rose. 🌹❤️</p>
         <button class="heart-btn" onclick="showMessage()">I Love You</button>
     </div>
