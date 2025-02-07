@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,27 +11,33 @@
             font-family: 'Arial', sans-serif;
             padding: 20px;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         .container {
-            max-width: 600px;
-            margin: 80px;
+            max-width: 90%;
+            width: 400px;
             background: white;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            position: absolute;
+            position: relative;
             animation: fadeIn 2s ease-in-out;
         }
         h1 {
             color: #d63384;
+            font-size: 1.5em;
         }
         p {
-            font-size: 18px;
+            font-size: 16px;
             color: #333;
         }
         .rose-img {
-            width: 100px;
-            margin: 20px 0;
+            width: 80px;
+            margin: 15px 0;
             transition: transform 0.5s;
         }
         .rose-img:hover {
@@ -40,8 +46,8 @@
         .heart-btn {
             background-color: #ff3366;
             color: white;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 10px 15px;
+            font-size: 16px;
             border: none;
             border-radius: 20px;
             cursor: pointer;
@@ -63,12 +69,11 @@
         .floating-text {
             position: absolute;
             width: 100%;
-            font-size: 24px;
+            font-size: 20px;
             color: #d63384;
             font-weight: bold;
             animation: floatingText 3s infinite ease-in-out;
             z-index: -1;
-            
         }
     </style>
     <script>
@@ -81,7 +86,7 @@
             popup.style.transform = "translate(-50%, -50%)";
             popup.style.background = "#ff3366";
             popup.style.color = "white";
-            popup.style.padding = "20px";
+            popup.style.padding = "15px";
             popup.style.borderRadius = "10px";
             popup.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.2)";
             popup.style.zIndex = "1000";
@@ -94,7 +99,7 @@
     <div class="floating-text">I Love You Mahii ❤️ Happy Rose Day! 🌹</div>
     <div class="container">
         <h1>Happy Rose Day, Mahii! 🌹</h1>
-        <img src="https://unsplash.com/photos/red-rose-with-droplets-gcWd0ts4RCo" alt="Rose" class="rose-img">
+        <img src="https://www.pngall.com/wp-content/uploads/5/Red-Rose-PNG-Image.png" alt="Rose" class="rose-img">
         <p>My love, every petal of this rose carries my love for you. I’m sorry for last night, and I hope this day brings a fresh start to our love. You are my forever rose. 🌹❤️</p>
         <button class="heart-btn" onclick="showMessage()">I Love You</button>
     </div>
